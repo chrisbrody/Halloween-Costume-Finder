@@ -6,8 +6,6 @@
         <title> Costume Finder</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">stLight.options({publisher: "ef3f50eb-814d-49cf-9587-e0a889e662f3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
         <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -50,17 +48,16 @@
                 <div class="col-md-4">
                 <div class="btn-group">
                   <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select Costume <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Scary</a></li>
-                    <li><a href="#">Funny</a></li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Super Hero</a></li>
-                    <li><a href="#">Sexy</a></li>
-                    <li><a href="#">Celebrity</a></li>
-                    <li><a href="#">Medival</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Other</a></li>
-                  </ul>
+                  <select id="costumeTypes">
+                    <option value = "scary">Scary</option>
+                    <option value = "funny">Funny</option>
+                    <option value = "animals">Animals</option>
+                    <option value = "
+                    supehero">Superhero</option>
+                    <option value = "sexy">Sexy</option>
+                    <option value = "movie">Movie</option>
+                    <option value = "medival">Medival</option>
+                  </select>
                 </div>
                   
                 </div>
@@ -80,19 +77,19 @@
                 <div class="col-md-4">
                 <div class="radio">
                   <label for="radios-0">
-                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                    <input type="radio" name="gender" id="radios-0" value="male" checked="checked">
                     Male
                   </label>
                 </div>
                 <div class="radio">
                   <label for="radios-1">
-                    <input type="radio" name="radios" id="radios-1" value="2">
+                    <input type="radio" name="gender" id="radios-1" value="female">
                     Female
                   </label>
                 </div>
                 <div class="radio">
                   <label for="radios-2">
-                    <input type="radio" name="radios" id="radios-2" value="3">
+                    <input type="radio" name="gender" id="radios-2" value="other">
                     Other
                   </label>
                 </div>
@@ -103,7 +100,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="button1id">Fit Me</label>
                 <div class="col-md-8">
-                  <button id="button1id" name="button1id" class="btn btn-success">FIND ME COSTUMES</button>
+                  <button id="button1id" name="button1id" class="btn btn-success" onclick="findCostumes()" type ="button">FIND ME COSTUMES</button>
                 </div>
               </div>
 
