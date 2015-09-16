@@ -1,0 +1,118 @@
+/*fix background 
+body {
+	background-image: url(images/background.png)
+
+
+
+}
+*/
+
+
+/*ZIV CSS*/
+body {
+	background-color: #d35400;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
+/*navbar font color */
+.navbar-brand {
+	color: #d35400;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #d35400;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: orange; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+  .navbar-default {
+    background-color: #d35400;
+    border-color: #030033;
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: orange; /*Change active text color here*/
+    }
+
+    /*center form */
+    .center_div{
+    margin: 0 auto;
+    width:50%;
+    margin-top: 10%;
+}
+
+
+.costume_match {
+	text-align: center;
+}
+
+
+
+
+
+/*ABBY CSS*/
+
+
+.music{
+	float:right;
+	margin-bottom: 40px;
+}
+
+.title {
+	text-align: center;
+	font-family: 'Overlock', cursive;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color:#C0C0C0;
+}
+
+h2 {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Overlock', cursive;
+	margin-bottom: 30px;
+	color:#800000;
+}
+
+img {
+	width: 222px;
+	height: 390px;
+	text-align: center;
+	}
+
+h4 {
+	text-align: center;
+	font-family: 'Overlock', cursive;
+	text-decoration: none;
+	color:#483C32;
+
+}
+
+a {
+	text-decoration: none;
+
+}
+
+.tryagain {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.share {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+
+
