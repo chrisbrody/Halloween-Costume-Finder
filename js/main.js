@@ -29,8 +29,11 @@ function showResults() {
 	var costumeGender = localStorage.genderTypes;
 	console.log(costumeStyle == "superhero")
 	if(costumeStyle == "superhero") {
-		if(true) {
-			alert("superhero male");
+		if(costumeGender == "male") {
+			document.getElementById("msuperhero").className =
+   document.getElementById("msuperhero").className.replace("hidden", "");
+   console.log(document.getElementsByClassName("msuperhero").className);
+
 
 		} else if (costumeGender  == "female") {
 			alert("superhero female");
