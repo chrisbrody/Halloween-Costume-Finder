@@ -6,18 +6,17 @@
         <title> Costume Finder</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">stLight.options({publisher: "ef3f50eb-814d-49cf-9587-e0a889e662f3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
         <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body onload="showResults()">
        
 <div class="music">
-    <audio src="mp3/monstermash.mp3" controls autostart="true" loop="false"> </audio>
+    <embed name="music" src="mp3/monstermash.mp3" loop="false" autostart="true" hidden="true" mastersound />
+
 </div>    
        
 <div class="title">

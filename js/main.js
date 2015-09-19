@@ -9,17 +9,9 @@ function findCostumes() {
 	
 			
 	localStorageData();
-			
-	if(costumeStyle == "scary") {
-		if(gender == "male") {
-			alert("scary male");
 
-		} else if (gender =="female") {
-			alert("scary female");
-		} else if (gender == "other") {
-			alert("scary other");
-		}
-	}
+	window.location.href = "results.html"
+	
 }
 
 function localStorageData() {
@@ -32,4 +24,34 @@ function localStorageData() {
 	localStorage.setItem("genderTypes", gender);
 }
 		
+function showResults() {
+	var costumeStyle = localStorage.costumeTypes;
+	var costumeGender = localStorage.genderTypes;
+	console.log(costumeStyle == "superhero")
+	if(costumeStyle == "superhero") {
+		if(true) {
+			alert("superhero male");
+
+		} else if (costumeGender  == "female") {
+			alert("superhero female");
+		} else if (costumeGender  == "other") {
+			alert("superhero other");
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
